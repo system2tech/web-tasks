@@ -1,19 +1,30 @@
-<html>
-<head><title>Sample Page</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <div>
-    <p>
-    This is a div.
-    </p>
-    </div>
-    <a href="http://example.com" id="link1">Example</a>
-    <a href="http://example2.com">Example2</a>
-    <form id="form1">
-        <input type="text" id="input1" name="input1"/>
-        <input type="text" name="input2"/>
-        <button type="submit">Submit</button>
+    <h1>Product Search</h1>
+    <form>
+        <input type="text" id="search-bar" placeholder="Search for products..." />
+        <button type="button" onclick="searchProduct()">Search</button>
     </form>
-    <div id="non_interactive">Non-interactive div</div>
-    <span>Some text</span>
+    <div id="products-list">
+        <!-- Static list of products -->
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Price: $10</p>
+            <button onclick="addToCart('Product 1')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Price: $20</p>
+            <button onclick="addToCart('Product 2')">Add to Cart</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
