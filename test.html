@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Web Page with Different Elements</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Test Web Page with Different Elements</h1>
+
+        <!-- Text input -->
+        <label for="textInput">Text Input:</label>
+        <input type="text" id="textInput" placeholder="Enter text here">
+
+        <!-- Password input -->
+        <label for="passwordInput">Password Input:</label>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+
+        <!-- Number input -->
+        <label for="numberInput">Number Input:</label>
+        <input type="number" id="numberInput" placeholder="Enter a number">
+
+        <!-- Email input -->
+        <label for="emailInput">Email Input:</label>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+
+        <!-- Radio buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe">
+
+        <!-- Select element (dropdown) -->
+        <label for="dropdown">Choose a country:</label>
+        <select id="dropdown">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" rows="4" placeholder="Enter your comments here"></textarea>
+
+        <!-- Hidden elements -->
+        <input type="hidden" id="hiddenInput" value="hiddenValue">
+        <div id="hiddenDiv" class="hidden">
+            <p>This is a hidden div.</p>
+        </div>
+
+        <!-- Date input -->
+        <label for="dateInput">Select a date:</label>
+        <input type="date" id="dateInput">
+
+        <!-- Time input -->
+        <label for="timeInput">Select a time:</label>
+        <input type="time" id="timeInput">
+
+        <!-- File input -->
+        <label for="fileInput">Upload a file:</label>
+        <input type="file" id="fileInput">
+
+        <!-- Buttons -->
+        <label>Actions:</label>
+        <button id="submitButton">Submit</button>
+        <button id="resetButton" type="reset">Reset</button>
+
+        <!-- Range input -->
+        <label for="rangeInput">Select a range:</label>
+        <input type="range" id="rangeInput" min="0" max="100">
+
+        <!-- Progress bar -->
+        <label for="progressBar">Progress:</label>
+        <progress id="progressBar" value="50" max="100"></progress>
+
+        <!-- Color picker -->
+        <label for="colorInput">Pick a color:</label>
+        <input type="color" id="colorInput">
+
+    </div>
+
+    <script>
+        // Simple script to toggle the hidden div when clicking a button
+        document.getElementById('submitButton').addEventListener('click', function() {
+            const hiddenDiv = document.getElementById('hiddenDiv');
+            hiddenDiv.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
