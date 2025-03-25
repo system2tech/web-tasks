@@ -59,6 +59,10 @@
         <input type="file" id="fileInput">
         </div>
 
+        <div id="statusMessage">
+            Status: Not Submitted
+        </div>
+
         <div>
         <!-- Buttons -->
         <label>Actions:</label>
@@ -96,12 +100,10 @@
     </div>
 
     <script>
-        // Simple script to toggle the hidden div when clicking a button
         document.getElementById('submitButton').addEventListener('click', function() {
-            const hiddenDiv = document.getElementById('hiddenDiv');
-            hiddenDiv.classList.toggle('hidden');
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = "Status: Form Submitted at " + new Date().toLocaleTimeString();
         });
     </script>
-
 </body>
 </html>
