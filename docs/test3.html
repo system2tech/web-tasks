@@ -81,15 +81,6 @@
     </div>
 
     <script>
-        // Simple script to toggle the hidden div when clicking a button
-        document.getElementById('submitButton').addEventListener('click', function() {
-            const hiddenDiv = document.getElementById('hiddenDiv');
-            hiddenDiv.classList.toggle('hidden');
-        });
-        document.getElementById('submitButton').addEventListener('click', function() {
-            const statusMessage = document.getElementById('statusMessage');
-            statusMessage.textContent = "Status: Submitted";
-        });
         document.getElementById('learnMore').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default navigation
             const moreInfo = document.getElementById('moreInfo');
