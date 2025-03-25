@@ -102,8 +102,12 @@
     <script>
         document.getElementById('submitButton').addEventListener('click', function() {
             const statusMessage = document.getElementById('statusMessage');
-            statusMessage.textContent = "Status: Form Submitted at " + new Date().toLocaleTimeString();
+            statusMessage.textContent = "Status: Submitted";
         });
-    </script>
+        document.getElementById('resetButton').addEventListener('click', function() {
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = "Status: Reset";
+        });
+        </script>
 </body>
 </html>
