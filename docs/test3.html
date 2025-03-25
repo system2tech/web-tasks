@@ -43,7 +43,7 @@
         <label for="textInput">Text Input:</label>
         <input type="text" id="textInput" placeholder="Enter text here">
         <div>
-            Select the pick-up location:
+            Selected location:
             <div style="width: 100px; height: 50px; background-color: lightgray; cursor: pointer;" id="locationSelector">
             </div>
         </div>
@@ -86,7 +86,7 @@
         document.getElementById('locationSelector').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default navigation
             const locationSelector = document.getElementById('locationSelector');
-            locationSelector.textContent = "Location selected: Helsinki airport";
+            locationSelector.textContent = "Helsinki airport";
         });
     </script>
 
