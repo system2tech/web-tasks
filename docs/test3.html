@@ -46,9 +46,6 @@
             Select the pick-up location:
             <div style="width: 100px; height: 50px; background-color: lightgray; cursor: pointer;" id="locationSelector">
             </div>
-            <div>
-            Some information about the location
-            </div>
         </div>
 
         <div>
@@ -84,8 +81,12 @@
         document.getElementById('learnMore').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default navigation
             const moreInfo = document.getElementById('moreInfo');
-            console.log("Learn more clicked");
             moreInfo.textContent = "This page contains different types of form elements.";
+        });
+        document.getElementById('locationSelector').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default navigation
+            const locationSelector = document.getElementById('locationSelector');
+            moreInfo.textContent = "Location selected: Helsinki airport";
         });
     </script>
 
